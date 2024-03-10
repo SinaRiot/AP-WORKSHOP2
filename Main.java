@@ -1,6 +1,4 @@
-
-   
-    class Student {
+class Student {
     private String firstname;
     private String lastname;
     private String id;
@@ -14,6 +12,47 @@
         this.id = id;
         grade = 0;
     }
+
+    public String getFirstname()
+    {
+        return firstname;
+    }
+    
+    public void setFirstname(String name)
+    {
+        this.firstname = name;
+    }
+
+    public String getLastname()
+    {
+        return lastname;
+    }
+
+    public void setLastname(String lastname)
+    {
+        this.lastname = lastname;
+    }
+
+    public String getId()
+    {
+        return id;
+    }
+
+    public void setId(String id)
+    {
+        this.id = id;
+    }
+
+    public double getGrade()
+    {
+        return grade;
+    }
+
+    public void setGrade(double grade)
+    {
+        this.grade = grade;
+    }
+
      public void printStudentInfo()
         {
             System.out.println(firstname + " " + lastname+ "\nID: =" + id + "\nGRADE: " +grade);
@@ -22,7 +61,30 @@
         public void setGrade(int studentGrade){
             grade = studentGrade;
         }
-      
+
+
+}
+
+ class lab {
+    private Student[] students;
+    private String teacherName;
+    private String dayOfWeek;
+    private int maxSize;
+    private int currentSize;
+    private double avgGrade;
+
+    public lab(String teacherName , String dayOfWeek , int maxSize ){
+        this.teacherName = teacherName;
+        this.dayOfWeek = dayOfWeek;
+        this.maxSize = maxSize;
+    }
+    
+    public void calavg()
+    {
+        for (int i = 0; i < currentSize; i++) {
+             double sum = sum  + this.students.grade;
+        }
+    }
 }
 public class Main {
 
